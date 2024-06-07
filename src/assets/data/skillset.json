@@ -65,13 +65,17 @@
       "values": [
         "GitHub",
         "Git",
-
         "Postgres",
         "dbt",
         "Docker",
         "Apache Airflow",
         "Amazon Web Services",
+        "Databricks",
         "Redis",
+        "Databend",
+        "Kafka",
+        "RabbitMQ",
+        "Red Panda",
         "MongoDB",
         "Figma",
         "Neo4j",

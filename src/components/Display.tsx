@@ -1,7 +1,7 @@
 import React from "react";
 import { phrases } from "~/assets/data/phrases.json";
 import { Typewriter } from "react-simple-typewriter";
-// import { mobileTextData } from "~/assets/data/mobileDisplayData.json";
+import { mobileTextData } from "~/assets/data/mobileDisplayData.json";
 
 const Display = () => {
   return (
@@ -20,15 +20,25 @@ const Display = () => {
             </div>
           </div>
           <p className="max-w-[600px] text-lg text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
-            I am a final year{" "}
+            I am a{" "}
             <span className="text-blue-500 dark:text-blue-300">
               data science
             </span>{" "}
-            student studying at{" "}
-            <span className="text-blue-500 dark:text-blue-300">CUNY</span> while
-            also learning more about{" "}
-            <span className="text-blue-500">full stack development</span> in my
-            free time with a mission of connecting people with data.
+            new grad from{" "}
+            <span className="text-blue-500 dark:text-blue-300">CUNY</span> with
+            2 years of{" "}
+            <span className="text-blue-500 dark:text-blue-300">
+              data engineering
+            </span>{" "}
+            experience with a mission of{" "}
+            <span className="text-blue-500 dark:text-blue-300">
+              connecting people with data
+            </span>{" "}
+            and help them make{" "}
+            <span className="text-blue-500 dark:text-blue-300">
+              data-driven decisions
+            </span>
+            .
           </p>
         </div>
       </div>

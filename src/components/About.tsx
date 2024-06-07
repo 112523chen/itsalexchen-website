@@ -16,7 +16,7 @@ const About = () => {
           </div>
 
           <p className="max-w-[600px] text-lg text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
-            I&apos;m a final year college student and{" "}
+            I&apos;m a recent new grad and{" "}
             <Link
               href="https://cunytechprep.org/"
               target="_blank"
@@ -24,13 +24,14 @@ const About = () => {
             >
               CUNY Tech Prep Alumni
             </Link>{" "}
-            who is pursuing a{" "}
+            with a{" "}
             <span className="text-blue-500 hover:text-blue-600 dark:text-blue-400 dark:hover:text-blue-500">
               Data Science
             </span>{" "}
             degree at New York City College of Technology, CUNY. I&apos;m a
-            curious and passionate individual who is always looking for new
-            opportunities. Some of the paste experiences I have are in{" "}
+            curious and passionate individual who is always looking to grow. In
+            my 2 years of experience, I have worked in various roles in the
+            different industries, honing my skills in{" "}
             <span
               className="text-blue-500 hover:text-blue-600 dark:text-blue-400 dark:hover:text-blue-500"
               title="Data Analysis"
@@ -40,9 +41,9 @@ const About = () => {
             ,{" "}
             <span
               className="text-blue-500 hover:text-blue-600 dark:text-blue-400 dark:hover:text-blue-500"
-              title="Data Analysis"
+              title="software development"
             >
-              quality assurance
+              software development
             </span>
             , and{" "}
             <span
@@ -51,8 +52,7 @@ const About = () => {
             >
               data engineering
             </span>
-            . Within these experiences, I have worked to connect people with
-            data in investigator and engineer roles.
+            .
           </p>
           <p className="max-w-[600px] text-lg text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
             My goal is to discover, analyze and harness &mdash; the power of
