@@ -5,8 +5,8 @@ import { env } from "./env";
 
 // Get the PostHog key from the environment
 
-const key: string = env.NEXT_PUBLIC_POSTHOG_KEY as string;
-const host = env.NEXT_PUBLIC_POSTHOG_HOST as string;
+const key = env.NEXT_PUBLIC_POSTHOG_KEY;
+const host = env.NEXT_PUBLIC_POSTHOG_HOST;
 
 if (!key) {
   throw new Error("PostHog key is not set");
