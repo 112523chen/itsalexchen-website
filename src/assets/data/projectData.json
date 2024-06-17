@@ -1,18 +1,27 @@
 {
   "projectData": [
     {
+      "id": 15,
+      "title": "NYC Taxi Trip Data Pipeline",
+      "details": "Developed a data pipeline that processes and analyzes NYC taxi trip data from 2019 using Databricks, Apache Spark, and Delta Lake",
+      "skills": [
+        "Databricks",
+        "Apache Spark",
+        "Delta Lake",
+        "Python",
+        "SQL",
+        "PySpark"
+      ],
+      "topics": ["data_engineering"],
+      "isRepo": true,
+      "isWebApp": false,
+      "link": "https://github.com/112523chen/nyc_taxi_data_pipeline"
+    },
+    {
       "id": 14,
       "title": "Wikipedia Information Retrieval System",
       "details": "Developed a information retrieval system that uses the vector space model to rank Wikipedia documents based on a query",
-      "skills": [
-        "Python",
-        "NLTK",
-        "Docker",
-        "Streamlit",
-        "Flask",
-        "Ollama",
-        "llama2"
-      ],
+      "skills": ["Python", "NLTK", "Docker", "Streamlit", "Flask", "Ollama"],
       "topics": ["data_science"],
       "isRepo": false,
       "isWebApp": false,
