@@ -1,37 +1,85 @@
-import Link from "next/link";
+import Header from "~/components/Header";
+import LinksSection from "~/components/LinksSection";
+import Section from "~/components/Section";
+import CertSection from "~/components/CertSection";
+import type { FC } from "react";
+import type { Item, WorkItem } from "~/types/Item";
+import CurrentStep from "~/components/CurrentStep";
 
-export default function HomePage() {
+const careerItems: WorkItem[] = [
+  {
+    title: "Tech Fellow",
+    company: "Metropolitan Transportation Authority",
+    duration: "June 2023 - Dec 2024",
+    href: "https://new.mta.info/about/",
+    description:
+      "Spearheaded the development and implementation of scalable and cost-effective data solutions in a hybrid cloud environment to simplify transit operations",
+  },
+  {
+    title: "Software Engineer",
+    company: "Develop for Good",
+    duration: "Apr 2023 - Aug 2023",
+    href: "https://www.developforgood.org/",
+    description:
+      "Collaborated with a team of developers to build a data pipeline to simplify and reduce operational costs for a non-profit",
+  },
+  {
+    title: "Energy Technology Intern",
+    company: "The City University of New York",
+    duration: "Jul 2022 - Aug 2022",
+    href: "https://www1.cuny.edu/sites/sustainable/",
+    description:
+      "Developed automation tools to simplify operational workflows to support data-driven decision making",
+  },
+  {
+    title: "Operations & Data Intern",
+    company: "The Urban Assembly",
+    duration: "Mar 2022 - May 2022",
+    href: "#",
+    description:
+      "Analyzed records across 3 departments, providing actionable insights to optimize resource allocation for individual schools",
+  },
+];
+
+const projectItems: Item[] = [
+  {
+    title: "NYC Taxi Trip Data Pipeline",
+    href: "https://github.com/112523chen/nyc_taxi_data_pipeline",
+    description:
+      "Developed a data pipeline that processes and analyzes NYC taxi trip data from 2019 using Databricks, Apache Spark, and Delta Lake",
+  },
+  {
+    title: "Wikipedia Information Retrieval System",
+    href: "https://github.com/112523chen/wikipedia-search-engine-web-app",
+    description:
+      "Developed a information retrieval system that uses the vector space model to rank Wikipedia documents based on a query",
+  },
+];
+
+const certItems: Item[] = [
+  {
+    title: "AWS Certified Data Engineer - Associate",
+    href: "https://www.credly.com/badges/6ff6e701-ce22-42fb-98dd-bdb30a92feeb/public_url",
+    description: "",
+  },
+];
+
+const HomePage: FC = () => {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-center bg-gradient-to-b from-[#2e026d] to-[#15162c] text-white">
-      <div className="container flex flex-col items-center justify-center gap-12 px-4 py-16">
-        <h1 className="text-5xl font-extrabold tracking-tight text-white sm:text-[5rem]">
-          Create <span className="text-[hsl(280,100%,70%)]">T3</span> App
-        </h1>
-        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:gap-8">
-          <Link
-            className="flex max-w-xs flex-col gap-4 rounded-xl bg-white/10 p-4 text-white hover:bg-white/20"
-            href="https://create.t3.gg/en/usage/first-steps"
-            target="_blank"
-          >
-            <h3 className="text-2xl font-bold">First Steps →</h3>
-            <div className="text-lg">
-              Just the basics - Everything you need to know to set up your
-              database and authentication.
-            </div>
-          </Link>
-          <Link
-            className="flex max-w-xs flex-col gap-4 rounded-xl bg-white/10 p-4 text-white hover:bg-white/20"
-            href="https://create.t3.gg/en/introduction"
-            target="_blank"
-          >
-            <h3 className="text-2xl font-bold">Documentation →</h3>
-            <div className="text-lg">
-              Learn more about Create T3 App, the libraries it uses, and how to
-              deploy it.
-            </div>
-          </Link>
-        </div>
-      </div>
-    </main>
+    <>
+      <Header />
+      <CurrentStep />
+      <Section title="experiences" items={careerItems} />
+      <CertSection title="certifications" items={certItems} />
+      <Section
+        title="projects"
+        items={projectItems}
+        callForActionHref="/projects"
+        callForActionText="all projects"
+      />
+      <LinksSection />
+    </>
   );
-}
+};
+
+export default HomePage;
