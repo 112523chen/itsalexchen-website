@@ -2,9 +2,9 @@ import Header from "~/components/Header";
 import LinksSection from "~/components/LinksSection";
 import Section from "~/components/Section";
 import CertSection from "~/components/CertSection";
+import CurrentStep from "~/components/CurrentStep";
 import type { FC } from "react";
 import type { Item, WorkItem } from "~/types/Item";
-import CurrentStep from "~/components/CurrentStep";
 
 const careerItems: WorkItem[] = [
   {
