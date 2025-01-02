@@ -58,6 +58,47 @@ const projectItems: ProjectItem[] = [
       "Trained serval supervised machine learning models to predict 4 features of galaxy from a spectra of the same galaxy",
     technologies: ["Python", "Numpy", "Matplotlib", "Seaborn", "Scikit-Learn"],
   },
+  {
+    title: "NYC Airbnb Listing Price Predictor App",
+    href: "https://112523chen-cet4973-fall2022-project-main-o7ewsh.streamlit.app",
+    description:
+      "A web application that predicts the Airbnb listing price in New York City",
+    technologies: [
+      "Python",
+      "Numpy",
+      "Matplotlib",
+      "Scikit-Learn",
+      "Streamlit",
+    ],
+  },
+  {
+    title: "NYC Airbnb Listings Analysis",
+    href: "https://github.com/112523chen/NYC_Airbnb_Analysis",
+    description:
+      "Analyzed data about the vacancy rates of Airbnb listings in NYC",
+    technologies: ["Python", "Numpy", "Matplotlib", "Seaborn"],
+  },
+  {
+    title: "Emotion Detection Web App",
+    href: "https://112523chen-text-emotion-classification-ctp-dem0.streamlit.app/",
+    description:
+      "A web application tht can be used to predicts emotions within a piece of text",
+    technologies: [
+      "Python",
+      "Numpy",
+      "Matplotlib",
+      "Scikit-Learn",
+      "NTLK",
+      "Streamlit",
+    ],
+  },
+  {
+    title: "Image Classification App",
+    href: "https://github.com/112523chen/Image-Classification-App",
+    description:
+      "A web application that helps you find what natural scenes are in your pictures",
+    technologies: ["Python", "Pandas", "Scikit-Learn", "Streamlit"],
+  },
 ];
 
 const ProjectPage: FC = () => {
