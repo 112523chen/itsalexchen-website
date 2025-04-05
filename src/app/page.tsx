@@ -8,6 +8,13 @@ import type { Item, WorkItem } from "~/types/Item";
 
 const careerItems: WorkItem[] = [
   {
+    title: "Project Analyst II",
+    company: "Metropolitan Transportation Authority",
+    duration: "Mar 2025 ~  ",
+    href: "https://new.mta.info/about/",
+    description: "Leading data engineering efforts within MTA Construction & Development to modernize analytical support for capital projects and department operations"
+  },
+  {
     title: "Tech Fellow",
     company: "Metropolitan Transportation Authority",
     duration: "June 2023 - Dec 2024",
@@ -29,7 +36,7 @@ const careerItems: WorkItem[] = [
     duration: "Jul 2022 - Aug 2022",
     href: "https://www1.cuny.edu/sites/sustainable/",
     description:
-      "Developed automation tools to simplify operational workflows to support data-driven decision making",
+      "Developed automation tools to simplify operational workflows to support data-driven decision making for CUNY's sustainability initiatives",
   },
   {
     title: "Operations & Data Intern",
@@ -43,16 +50,16 @@ const careerItems: WorkItem[] = [
 
 const projectItems: Item[] = [
   {
+    title: "Tubro",
+    href: "",
+    description:
+      "cli tool that simplifies developer workflows using AI agents built using Rust",
+  },
+  {
     title: "NYC Taxi Trip Data Pipeline",
     href: "https://github.com/112523chen/nyc_taxi_data_pipeline",
     description:
       "Developed a data pipeline that processes and analyzes NYC taxi trip data from 2019 using Databricks, Apache Spark, and Delta Lake",
-  },
-  {
-    title: "Wikipedia Information Retrieval System",
-    href: "https://github.com/112523chen/wikipedia-search-engine-web-app",
-    description:
-      "Developed a information retrieval system that uses the vector space model to rank Wikipedia documents based on a query",
   },
 ];
 
