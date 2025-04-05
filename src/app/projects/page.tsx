@@ -4,6 +4,12 @@ import type { ProjectItem } from "~/types/Item";
 
 const projectItems: ProjectItem[] = [
   {
+    title: "Tubro",
+    href: "",
+    description: "cli tool that simplifies developer workflows using AI agents built using Rust",
+    technologies: ["Rust", "LLMs", "Makefile"]
+  },
+  {
     title: "NYC Taxi Trip Data Pipeline",
     href: "https://github.com/112523chen/nyc_taxi_data_pipeline",
     description: "data pipeline that processes and analyzes NYC taxi trip data",
