@@ -6,8 +6,9 @@ const projectItems: ProjectItem[] = [
   {
     title: "Tubro",
     href: "",
-    description: "cli tool that simplifies developer workflows using AI agents built using Rust",
-    technologies: ["Rust", "LLMs", "Makefile"]
+    description:
+      "cli tool that simplifies developer workflows using AI agents built using Rust",
+    technologies: ["Rust", "LLMs", "Makefile"],
   },
   {
     title: "NYC Taxi Trip Data Pipeline",

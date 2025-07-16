@@ -29,31 +29,35 @@ const Section: FC<SectionProps> = ({
         {items.map((item, index) => (
           // define if item is of type Item or WorkItem
           <div key={index} className="group">
-            {item.href === "" ? <div>
-              <h3 className="mb-1 text-xl font-semibold transition-colors duration-200">
-                {title === "projects"
-                  ? `${item.title}`
-                  : `${isWorkItem(item) ? item.company : item.title}`}
-              </h3>
-              <p className="mb-2 text-sm text-gray-600">
-                {title === "experiences" && isWorkItem(item)
-                  ? `${item.title} (${item.duration})`
-                  : ""}
-              </p>
-              <p className="text-gray-500">{item.description}</p>
-            </div> : <Link href={item.href} target="_blank">
-              <h3 className="group-hover:text-accent mb-1 text-xl font-semibold transition-colors duration-200">
-                {title === "projects"
-                  ? `${item.title}`
-                  : `${isWorkItem(item) ? item.company : item.title}`}
-              </h3>
-              <p className="mb-2 text-sm text-gray-600">
-                {title === "experiences" && isWorkItem(item)
-                  ? `${item.title} (${item.duration})`
-                  : ""}
-              </p>
-              <p className="text-gray-500">{item.description}</p>
-            </Link>}
+            {item.href === "" ? (
+              <div>
+                <h3 className="mb-1 text-xl font-semibold transition-colors duration-200">
+                  {title === "projects"
+                    ? `${item.title}`
+                    : `${isWorkItem(item) ? item.company : item.title}`}
+                </h3>
+                <p className="mb-2 text-sm text-gray-600">
+                  {title === "experiences" && isWorkItem(item)
+                    ? `${item.title} (${item.duration})`
+                    : ""}
+                </p>
+                <p className="text-gray-500">{item.description}</p>
+              </div>
+            ) : (
+              <Link href={item.href} target="_blank">
+                <h3 className="group-hover:text-accent mb-1 text-xl font-semibold transition-colors duration-200">
+                  {title === "projects"
+                    ? `${item.title}`
+                    : `${isWorkItem(item) ? item.company : item.title}`}
+                </h3>
+                <p className="mb-2 text-sm text-gray-600">
+                  {title === "experiences" && isWorkItem(item)
+                    ? `${item.title} (${item.duration})`
+                    : ""}
+                </p>
+                <p className="text-gray-500">{item.description}</p>
+              </Link>
+            )}
           </div>
         ))}
       </div>

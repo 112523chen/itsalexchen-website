@@ -12,7 +12,8 @@ const careerItems: WorkItem[] = [
     company: "Metropolitan Transportation Authority",
     duration: "Mar 2025 ~  ",
     href: "https://new.mta.info/about/",
-    description: "Leading data engineering efforts within MTA Construction & Development to modernize analytical support for capital projects and department operations"
+    description:
+      "Leading data engineering efforts within MTA Construction & Development to modernize analytical support for capital projects and department operations",
   },
   {
     title: "Tech Fellow",
