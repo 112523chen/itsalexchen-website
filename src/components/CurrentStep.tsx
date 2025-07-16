@@ -10,9 +10,9 @@ const CurrentStep: FC = () => {
         <p className="text-gray-500">Last updated on 2025-04-28</p>
       </div>
       <p className="">
-        Currently I&apos;m continuing to develop my knowledge and
-        skills in building scalable and cost-effective data
-        solutions in both hybrid-cloud and multi-cloud environments. I&apos;m also working on a few side
+        Currently I&apos;m continuing to develop my knowledge and skills in
+        building scalable and cost-effective data solutions in both hybrid-cloud
+        and multi-cloud environments. I&apos;m also working on a few side
         projects that I&apos;m excited to share soon!
       </p>
     </section>

@@ -11,9 +11,11 @@ const ProjectCard: FC<{ project: Project }> = ({ project }) => {
           <h3 className="group-hover:text-accent text-2xl font-bold transition-colors">
             {project.title}
           </h3>
-          {
-            project.href !== "" ?
-              <ArrowUpRight className="group-hover:text-accent h-5 w-5 text-gray-400 transition-colors" /> : <></>}
+          {project.href !== "" ? (
+            <ArrowUpRight className="group-hover:text-accent h-5 w-5 text-gray-400 transition-colors" />
+          ) : (
+            <></>
+          )}
         </div>
       </Link>
 
