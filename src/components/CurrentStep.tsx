@@ -7,7 +7,7 @@ const CurrentStep: FC = () => {
         <h3 className="mb-3 flex items-center text-2xl font-bold">
           <span className="text-accent mr-2">*</span> what i&apos;m working on
         </h3>
-        <p className="text-gray-500">Last updated on 2025-05-16</p>
+        <p className="text-gray-500">Last updated on 2025-12-07</p>
       </div>
       <p className="">
         Currently I&apos;m continuing to develop my knowledge and skills in
